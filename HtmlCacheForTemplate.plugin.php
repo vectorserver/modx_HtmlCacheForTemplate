@@ -14,11 +14,6 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 error_reporting(E_ALL);
 
-// Проверяем, что мы в веб-контексте (не в админке)
-if ($modx->context->get('key') !== 'web') {
-    //return; // Раскомментируйте, если нужно отключить выполнение в админке
-}
-
 // Массив ID шаблонов, для которых будет работать кеширование
 $template_ids = [1, 7, 2, 3, 4, 6, 11, 12, 20];
 
